@@ -36,7 +36,7 @@ The following EXTRA features are implemented:
 
 Here's a video / GIF that demos all of the app's implemented features:
 
-<img src='https://imgur.com/bgaGnEW' title='Video Demo' width='' alt='Video Demo' />
+<img src='https://imgur.com/bgaGnEW.gif' title='Video Demo' width='' alt='Video Demo' />
 
 GIF created with ScreenToGif
 
