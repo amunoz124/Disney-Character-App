@@ -2,9 +2,9 @@
 
 # AND101 Project 6 - CYOAPI Part 2: RecyclerView Edition
 
-Submitted by: **Your Name Here**
+Submitted by: Andy Munoz
 
-Time spent: **X** hours spent in total
+Time spent: 5 hours spent in total
 
 ## Summary
 
