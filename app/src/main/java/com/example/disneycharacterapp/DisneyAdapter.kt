@@ -3,6 +3,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.disneycharacterapp.R
@@ -35,6 +36,10 @@ class DisneyAdapter(private val disneyList: List<String>) : RecyclerView.Adapter
             .load(disneyList[position])
             .centerCrop()
             .into(holder.disneyImage)
+
+        holder.disneyImage.setOnClickListener {
+            Toast.makeText(holder.itemView.context, "Disney character at position $position clicked", Toast.LENGTH_SHORT).show()
+        }
 
 //        holder.disneyName.text = "Character Name: ${name}"
 //        holder.disneyFilms.text = "Films: ${films}"
