@@ -1,16 +1,16 @@
 <!-- (This is a comment) INSTRUCTIONS: Go through this page and fill out any **bolded** entries with their correct values.-->
 
-# AND101 Project 6 - CYOAPI Part 2: RecyclerView Edition
+# AND101 Project 7 - CYOAPI Part 3: Beautified
 
 Submitted by: Andy Munoz
 
-Time spent: 5 hours spent in total
+Time spent: 2 hours spent in total
 
 ## Summary
 
-Disney Character app is an android app that displays a scrollable list of characters from the Disney API.
+Disney Character App is an android app that shows disney characters using the Disney API.
 
-If I had to describe this project in three (3) emojis, they would be: :sweat: :joy: :astonished:
+If I had to describe this project in three (3) emojis, they would be: :satisfied: :joy: :sleepy:
 
 ## Application Features
 
@@ -18,15 +18,16 @@ If I had to describe this project in three (3) emojis, they would be: :sweat: :j
 
 The following REQUIRED features are completed:
 
-- [X] Make an API call to an API of your choice using AsyncHTTPClient
-- [X] Implement a RecyclerView to display a list of entries from the API
-- [ ] Display at least three (3) pieces of data for each RecyclerView item
+- [X] App contains a RecyclerView that displays a list of scrollable data
+- [X] App displays at least two (2) pieces of data for each RecyclerView item
+- [X] Use a downloadable font with custom color and size
+- [X] Modify the theme of the app in `themes.xml`
+- [X] Define and apply at least one style in **either** `themes.xml` or a new file `styles.xml`
 
 The following STRETCH features are implemented:
 
-- [ ] Add a UI element for the user to interact with API further
-- [X] Show a `Toast` or `Snackbar` when an item is clicked
-- [ ] Add item dividers with `DividerItemDecoration`
+- [ ] Update the night theme to use different versions of styles when in dark mode
+- [ ] Use different drawables when in dark mode
 
 The following EXTRA features are implemented:
 
@@ -36,7 +37,7 @@ The following EXTRA features are implemented:
 
 Here's a video / GIF that demos all of the app's implemented features:
 
-<img src='https://imgur.com/GfMgKKw.gif' title='Video Demo' width='' alt='Video Demo' />
+<img src='https://imgur.com/oqYLfxh.gif' title='Video Demo' width='' alt='Video Demo' />
 
 GIF created with ScreenToGif
 
