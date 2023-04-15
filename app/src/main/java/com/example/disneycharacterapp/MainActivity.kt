@@ -13,7 +13,7 @@ import okhttp3.Headers
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var disneyList: MutableList<String>
+    private lateinit var disneyList: MutableList<Triple<String?,String?,String?>>
     private lateinit var rvDisney: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,11 +39,9 @@ class MainActivity : AppCompatActivity() {
                 for (i in 0 until (charactersArray?.length() ?: 0)) {
                     val characterObject = charactersArray?.getJSONObject(i)
                     val imageUrl = characterObject?.getString("imageUrl")
-//                    val name = characterObject?.getString("name")
-//                    val films = characterObject?.getJSONArray("films").toString()
-                    if (imageUrl != null) {
-                        disneyList.add(imageUrl)
-                    }
+                    val name = characterObject?.getString("name")
+                    var films = characterObject?.getString("films")
+                    disneyList.add(Triple(name, films, imageUrl))
                 }
 
                 val adapter = DisneyAdapter(disneyList)

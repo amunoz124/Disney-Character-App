@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.disneycharacterapp.R
 
-class DisneyAdapter(private val disneyList: List<String>) : RecyclerView.Adapter<DisneyAdapter.ViewHolder>() {
+class DisneyAdapter(private val disneyList: MutableList<Triple<String?, String?, String?>>) : RecyclerView.Adapter<DisneyAdapter.ViewHolder>() {
     class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
 
         val disneyImage: ImageView
@@ -33,7 +33,7 @@ class DisneyAdapter(private val disneyList: List<String>) : RecyclerView.Adapter
 
     override fun onBindViewHolder(holder: DisneyAdapter.ViewHolder, position: Int) {
         Glide.with(holder.itemView)
-            .load(disneyList[position])
+            .load(disneyList[position].third)
             .centerCrop()
             .into(holder.disneyImage)
 
@@ -41,8 +41,8 @@ class DisneyAdapter(private val disneyList: List<String>) : RecyclerView.Adapter
             Toast.makeText(holder.itemView.context, "Disney character at position $position clicked", Toast.LENGTH_SHORT).show()
         }
 
-//        holder.disneyName.text = "Character Name: ${name}"
-//        holder.disneyFilms.text = "Films: ${films}"
+        holder.disneyName.text = "Character Name: ${disneyList[position].first}"
+        holder.disneyFilms.text = "Films: ${disneyList[position].second}"
     }
 
     override fun getItemCount() = disneyList.size
