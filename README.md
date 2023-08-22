@@ -24,15 +24,6 @@ The following REQUIRED features are completed:
 - [X] Modify the theme of the app in `themes.xml`
 - [X] Define and apply at least one style in **either** `themes.xml` or a new file `styles.xml`
 
-The following STRETCH features are implemented:
-
-- [ ] Update the night theme to use different versions of styles when in dark mode
-- [ ] Use different drawables when in dark mode
-
-The following EXTRA features are implemented:
-
-- [ ] List anything else that you added to improve the app!
-
 ## Video Demo
 
 Here's a video / GIF that demos all of the app's implemented features:
@@ -40,15 +31,6 @@ Here's a video / GIF that demos all of the app's implemented features:
 <img src='https://imgur.com/oqYLfxh.gif' title='Video Demo' width='' alt='Video Demo' />
 
 GIF created with ScreenToGif
-
-<!-- Recommended tools:
-- [Kap](https://getkap.co/) for macOS
-- [ScreenToGif](https://www.screentogif.com/) for Windows
-- [peek](https://github.com/phw/peek) for Linux. -->
-
-## Notes
-
-Here's a place for any other notes on the app, it's creation process, or what you learned this unit!
 
 ## License
 
